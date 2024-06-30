@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DarpukaApp.DarbukaAppPage"
+             Title="DarbukaAppPage"
+             BackgroundImageSource="arabtheme.png">
+    <Grid Padding="0"
+          RowSpacing="0"
+          ColumnSpacing="0">
+        <ImageButton x:Name="ImgDarbuka"
+                     HeightRequest="350"
+                     WidthRequest="350"
+                     BackgroundColor="LightGray"
+                     CornerRadius="175"
+                     Source="darbukaborders.png"
+                     Aspect="Fill"/>
+        
+
+        <Grid Padding="10"
+              HeightRequest="240"
+              WidthRequest="240"
+              RowDefinitions="3.33*,3.33*,3.33*"
+              ColumnDefinitions="3.33*,3.33*,3.33*">
+            <Button Text="Roll"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Clicked="Button_Clicked"
+                    CommandParameter="rolltop"/>
+            <Button Text="Roll"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Clicked="Button_Clicked"
+                    CommandParameter="rollmid"/>
+            <Button Text="Ka"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Clicked="Button_Clicked"
+                    CommandParameter="kaleft"/>
+            <Button Text="Doum"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Clicked="Button_Clicked"
+                    CommandParameter="doum"/>
+            <Button Text="Slap"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Clicked="Button_Clicked"
+                    CommandParameter="slap"/>
+            <Button Text="Ka"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Clicked="Button_Clicked"
+                    CommandParameter="karight"/>
+            <Button Text="Tek"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Clicked="Button_Clicked"
+                    CommandParameter="tek"/>
+
+        </Grid>
+        
+    </Grid>
+    
+</ContentPage>
